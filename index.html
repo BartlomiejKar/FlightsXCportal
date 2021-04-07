@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGC flights</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header_title">Konwerter plików .igc</h1>
+    </header>
+    <form class="form" id="form">
+        <label class="form_label" for="igcInput">Proszę podać link do danych lotu w formacie .igc</label>
+        <input class="form_input" id="igcInput" type="text"
+            placeholder="https://xcportal.pl/sites/default/files/tracks/2020-06-09/069daro396091568.igc" />
+        <button class="form_button" type="submit">Konwertuj</button>
+    </form>
+    <main class="data">
+        <div class="data_container">
+            <span>Data:
+                <p id="data">...</p>
+            </span>
+        </div>
+        <div class="data_container">
+            <span>Czas startu:
+                <p id="startTime">...</p>
+            </span>
+        </div>
+        <div class="data_container">
+            <span>Czas zakończenia:
+                <p id="finishTime">...</p>
+            </span>
+        </div>
+        <div class="data_container">
+            <span>Pilot:
+                <p id="pilot">...</p>
+            </span>
+        </div>
+        <div class="data_container">
+            <span>Model:
+                <p id="model">...</p>
+            </span>
+
+        </div>
+        <div class="data_container">
+            <span>Kategoria lotu:
+                <p id="competition">...</p>
+            </span>
+        </div>
+    </main>
+    <div id="map"></div>
+    <footer class="footer">
+        <div class="footer_container">
+            <a href="https://github.com/BartlomiejKar/FlightsXCportal">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/archive/b/be/20130324062553%21Source_code_project_1171.svg"
+                    alt="code" />
+            </a>
+            <p class="footer_github">Github</p>
+        </div>
+    </footer>
+    <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script defer src="./dist/bundle.js"></script>
+</body>
+
+</html>

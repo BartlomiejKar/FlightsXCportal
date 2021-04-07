@@ -1,0 +1,120 @@
+html {
+    box-sizing: border-box;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    font-family: 'Roboto', sans-serif;
+    }
+    #map {
+    height: 250px;
+    margin: 20px auto ;
+    border-radius: 10px;
+    width: 700px;
+    }
+    
+    .header {
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 300;
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+    .form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .form_label {
+        padding: 20px;
+        margin: 10px 0;
+        font-size: 2.6rem;
+    }
+    
+    .form_input {
+        width: 50%;
+       margin: 5px;
+       border-radius: 5px;
+       border: none;
+       height: 30px;
+    }
+    
+    .form_button {
+        background-color: white;
+        border: 2px solid #555555;
+        border-radius: 5px;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .form::after {
+    content: "";
+    height: 0.3px;
+    background-color: white;
+    margin-top: 10px;
+    width: 90%;
+    }
+    
+    .data {
+        display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+    
+    .data_container {
+    text-align: center;
+    border: 2px solid rgba(28,110,164,0.18);
+    border-radius: 10px;
+    background-color: #2C73D2;
+    opacity: 0.7;
+    box-shadow: 4px 5px 14px -9px #000000;
+    padding: 10px;
+    min-height: 100px;
+    
+    }
+    span {
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    p {
+        font-weight: 300;
+        font-style: italic;
+        letter-spacing: 0.7px;
+    }
+    .footer {
+        margin-top: 20px;
+    }
+    .footer_container {
+        display: flex;
+      justify-content: center;
+    }
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .footer_github {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    margin: auto 10px ;
+    }
+    
+    @media (max-width: 943px) {
+        .data {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .data_container {
+            margin:5px
+        }
+        #map {
+            width: 80%;
+        }
+    }
